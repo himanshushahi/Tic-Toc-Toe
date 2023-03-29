@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color--: rgb(116, 32, 199);
+  --textColor--: white;
+  --colour--:rgb(205, 197, 197);
+}
+
+body {
+  height: 100vh;
+  background-color:rgb(205, 197, 197);
+  background-color: var(--colour--);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.nav {
+  height: 12%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color--);
+  font-size: xx-large;
+  border-bottom: 2px solid;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  color: var(--textColor--);
+}
+
+#theme {
+  width: 4%;
+  height: 7%;
+  position: absolute;
+  top: 2.5%;
+  right: 3%;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  color: var (--color--);
+  border: 2px solid white;
+  background-color:rgb(205, 197, 197);
+}
+
+@media only screen and (max-width: 600px) {
+  #theme{
+    width: 10%;
+
+  }
+}
+
+.table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+}
+
+#board td {
+  width: 10rem;
+  height: 8rem;
+  border: 1px solid white;
+  text-align: center;
+  cursor: pointer;
+  font-size: 100px;
+  color: var(--textColor--);
+  background-color: var(--color--);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.top {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+.reset,#result {
+  width: 30rem;
+  padding: 15px 0;
+  text-align: center;
+  background-color: var(--color--);
+  font-size:2rem;
+  font-weight: 400;
+  border: 2px solid white;
+  color: var(--textColor--);
+}
+
+.reset:hover {
+  background-color: rgb(116, 32, 199);
+  cursor: pointer;
+}
+
+#noti {
+  visibility: hidden;
+}
+
+.noti {
+  display: block;
+  width: 19.7rem;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  color: var(--textColor--);
+  background-color: var(--color--);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: 2px solid var(--textColor--);
+}
+
+.footer {
+  height: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color--);
+  border-top: 2px solid white;
+  font-size: large;
+  color: var(--textColor--);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#modal-background,#forResetModalBackground{
+  background-color: rgba(0, 0, 0, 0.402);
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 300ms ease-in-out;
+}
+
+.modal,.resetmodal{
+  width: 35%;
+  background-color:var(--color--) ;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: .5rem;
+  height: 35%;
+  transition: all 300ms ease-in-out;
+}
+
+.modal button, .resetmodal button{
+  padding: 15px;
+  width: 10%;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  cursor: pointer;
+
+}
+
+@media screen and (max-width:600px){
+  .modal,.resetmodal{
+    width: 95%;
+  }
+
+  .modal button,.resetmodal button{
+    padding: 25px;
+    width: 15%;
+    border: none;
+  }
+
+  .reset,#result{
+    width: 95vw;
+    padding: 2px;
+  }
+
+  #board td{
+    width: 7.6rem;
+    height:7rem;
+    font-size: 3rem;
+  }
+
+  .table{
+    height: 90vh;
+  }
+  
+}

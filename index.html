@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Tic Toc Toe</title>
+</head>
+
+<body id="body">
+  <!-- navbar -->
+  <div class="nav">
+    Tic Toc Toe
+  </div>
+  <!-- table div -->
+  <div class="table">
+    <table id="board">
+      <div class="top">
+        <!-- game status or result -->
+        <h3 id="result" title="Game Status">Game Started</h3>
+        <!-- reset button -->
+        <button id="reset" class="reset">Reset</button>
+      </div>
+      <!-- table element -->
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="modal-background" style="visibility: hidden; opacity: 0; transition: opacity 300ms ease-in-out;">
+    <div id="modal" class="modal" style="transform: translateY(-200%);">
+      <h3 id="result2" style="color:white;"></h3>
+     <img src="./Well-Done-Congratulations-GIF.gif" alt="Congratutaltion-gif" height="50%" id="img">
+      <button id="ok">OK</button>
+    </div>
+  </div>
+
+  <div id="forResetModalBackground" style="visibility: hidden; opacity: 0; transition: opacity 300ms ease-in-out;">
+    <div id="forResetModal" class="resetmodal" style="transform: translateY(-200%);">
+      <h3 id="result2" style="color:white;">Are You Sure?</h3>
+      <div style="display: flex; justify-content: space-around; width: 100%;">
+        <button id="Yes">Yes</button> <Button id="No">No</Button>
+      </div>
+      
+    </div>
+  </div>
+  <div class="footer">Developed By Himanshu Kumar Shahi</div>
+
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/59913a166f.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
