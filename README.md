@@ -16,7 +16,7 @@ This is a simple tic tac toe game created using HTML, CSS and JavaScript.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/himanshushahi/Tic-Toc-Toe.git
    ```
 2. Open `index.html` in your browser
 
