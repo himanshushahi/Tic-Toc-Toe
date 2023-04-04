@@ -1,5 +1,3 @@
-Here's a sample README file for your tic tac toe game:
-
 # Tic Tac Toe Game
 
 This is a simple tic tac toe game created using HTML, CSS and JavaScript.
